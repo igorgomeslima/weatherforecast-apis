@@ -1,4 +1,4 @@
-# Weather Forecast Apis - Http & Https
+# Weather Forecast Apis - HTTP & HTTPS
 This sample project can simulate scenery described [here](https://github.com/Kong/kong/issues/7566#issuecomment-881134190).
 
 # Needs
@@ -8,7 +8,7 @@ This sample project can simulate scenery described [here](https://github.com/Kon
 To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
 
 
-# Configure Https on localhost
+# Configure HTTPS on localhost
 
 To run localhost with HTTPs, we need to set/add some "dev" local certs to able it. We can do it with this simple commands:
 
@@ -45,7 +45,7 @@ info: Microsoft.Hosting.Lifetime[0]
 
 # 
 
-## Run HTTPs Api version
+## Run HTTPS Api version
 
 ```
  YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Https> dotnet restore
