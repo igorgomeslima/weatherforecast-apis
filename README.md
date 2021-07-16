@@ -1,5 +1,5 @@
 # Weather Forecast Apis - Http & Https
-This sample project can simulate the sceneario described [here](https://github.com/Kong/kong/issues/7566#issuecomment-881134190).
+This sample project can simulate scenery described [here](https://github.com/Kong/kong/issues/7566#issuecomment-881134190).
 
 # Needs
 
