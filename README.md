@@ -2,10 +2,25 @@
 This sample project can simulate the sceneario described [here](https://github.com/Kong/kong/issues/7566#issuecomment-881134190).
 
 # Needs
+
 - [.NET SDK 5.xxx](https://dotnet.microsoft.com/download/dotnet/5.0) - choose your OS.
 
 To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
 
+# 
+
+## Https on localhost
+
+To run localhost with HTTPs, we need to set/add some "dev" certs to able it. We can able this with this simple commands:
+
+### [All platforms - certificate not trusted](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0&tabs=visual-studio#all-platforms---certificate-not-trusted)
+```
+<ON_ANY_FOLDER_AFTER_INSTALL_NET_SDK\...\> dotnet dev-certs https --clean
+<ON_ANY_FOLDER_AFTER_INSTALL_NET_SDK\...\> dotnet dev-certs https --trust
+```
+If you are having problems with those commands, please see the following link to troubleshoot certificate problems, specifics configs by OS(Linux/Docker, macOS, Windows): [Enforce HTTPS in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0&tabs=visual-studio).
+
+# 
 
 ## Run HTTP Api version
 
@@ -28,6 +43,8 @@ info: Microsoft.Hosting.Lifetime[0]
 
 ### TRY
 > GET: `http://localhost:7000/health`
+
+# 
 
 ## Run HTTPs Api version
 
