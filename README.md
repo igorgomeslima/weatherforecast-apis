@@ -23,6 +23,7 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: I:\_projects\net\weatherforecast-apis\WeatherForecast.Api.Http
 ```
 
+### TRY
 > GET: `http://localhost:7000/health`
 
 ## Run HTTPs Api version
@@ -43,5 +44,5 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: I:\_projects\net\weatherforecast-apis\WeatherForecast.Api.Https
 ```
 
+### TRY
 > GET: `https://localhost:5001/health`
-
