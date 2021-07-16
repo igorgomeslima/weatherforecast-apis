@@ -7,11 +7,10 @@ This sample project can simulate scenery described [here](https://github.com/Kon
 
 To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
 
-# 
 
-## Https on localhost
+# Configure Https on localhost
 
-To run localhost with HTTPs, we need to set/add some "dev" certs to able it. We can able this with this simple commands:
+To run localhost with HTTPs, we need to set/add some "dev" local certs to able it. We can do it with this simple commands:
 
 ### [All platforms - certificate not trusted](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl?view=aspnetcore-5.0&tabs=visual-studio#all-platforms---certificate-not-trusted)
 ```
