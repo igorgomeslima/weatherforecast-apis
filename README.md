@@ -9,7 +9,10 @@ To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio
 
 ## Run HTTP Api version
 
- `YOUR_CLONE_FOLDER\WeatherForecast.Api.Http> dotnet run`
+```
+ YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Http> dotnet restore
+ YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Http> dotnet run
+```
 
 ```
 Building...
@@ -28,7 +31,10 @@ info: Microsoft.Hosting.Lifetime[0]
 
 ## Run HTTPs Api version
 
- `YOUR_CLONE_FOLDER\WeatherForecast.Api.Https> dotnet run`
+```
+ YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Https> dotnet restore
+ YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Https> dotnet run
+```
 
 ```
 Building...
