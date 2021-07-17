@@ -7,7 +7,7 @@ This sample project can simulate scenery described [here](https://github.com/Kon
 
 To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
 
-# Ambiance
+# How to start the solution?
 
 ## With Docker Compose
 
