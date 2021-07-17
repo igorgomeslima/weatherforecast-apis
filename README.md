@@ -7,8 +7,17 @@ This sample project can simulate scenery described [here](https://github.com/Kon
 
 To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
 
+# Ambiance
 
-# Configure HTTPS on localhost
+## With Docker Compose
+
+```
+YOUR_CLONE_FOLDER\weatherforecast-apis\> docker-compose up --build
+```
+
+## Without Docker Compose
+
+#### Configure HTTPS on localhost
 
 To run localhost with HTTPs, we need to set/add some "dev" local certs to able it. We can do it with this simple commands:
 
@@ -21,7 +30,7 @@ If you are having problems with those commands, please see the following link to
 
 # 
 
-## Run HTTP Api version
+#### Run HTTP Api version
 
 ```
  YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Http> dotnet restore
@@ -40,12 +49,12 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: I:\_projects\net\weatherforecast-apis\WeatherForecast.Api.Http
 ```
 
-### TRY
+#### Try it out
 > GET: `http://localhost:7000/health`
 
 # 
 
-## Run HTTPS Api version
+### Run HTTPS Api version
 
 ```
  YOUR_CLONE_FOLDER\weatherforecast-apis\WeatherForecast.Api.Https> dotnet restore
@@ -66,5 +75,5 @@ info: Microsoft.Hosting.Lifetime[0]
       Content root path: I:\_projects\net\weatherforecast-apis\WeatherForecast.Api.Https
 ```
 
-### TRY
+#### Try it out
 > GET: `https://localhost:5001/health`
