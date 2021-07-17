@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  #############################################################
+  # Weather Forecast service running over HTTPS/HTTP protocols
+  #############################################################
+  weatherapi-https:
+    build: WeatherForecast.Api.Https/
+    container_name: "weatherforecast-https"
+    image: "weatherforecast-https-api:github"
+    ports:
+        - "5000:80"
+        - "5001:443"
+    environment:
+        ASPNETCORE_URLS: "https://+;http://+"
+        ASPNETCORE_HTTPS_PORT: "5001"
+        ASPNETCORE_ENVIRONMENT: Development
+    volumes:
+        - .\user-secrets:/root/.microsoft/usersecrets
+        - .\certs\https:/root/.aspnet/https/
+  
+  #############################################################
+  # Weather Forecast service running over HTTP protocol
+  #############################################################
+  weatherapi-http:
+    build: WeatherForecast.Api.Http/
+    container_name: "weatherforecast-http"
+    image: "weatherforecast-http-api:github"
+    ports:
+        - "7000:80"
+    environment:
+        ASPNETCORE_URLS: "http://+"
+        ASPNETCORE_ENVIRONMENT: Development
