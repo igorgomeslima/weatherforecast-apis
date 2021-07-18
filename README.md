@@ -4,8 +4,7 @@ This sample project can simulate scenery described [here](https://github.com/Kon
 # Needs
 
 - [.NET SDK 5.xxx](https://dotnet.microsoft.com/download/dotnet/5.0) - choose your OS.
-
-To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
+- Docker Engine(OPTIONAL, if desire using this solution on containers).
 
 # How to start the solution?
 
@@ -16,6 +15,8 @@ YOUR_CLONE_FOLDER\weatherforecast-apis\> docker-compose up --build
 ```
 
 ## Without Docker Compose
+
+To run it, you can use your favorite IDE that compiles .NET, like [Visual Studio Code](https://code.visualstudio.com/) with [OmniSharp](https://code.visualstudio.com/docs/languages/csharp) plugin.
 
 #### Configure HTTPS on localhost
 
