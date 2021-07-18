@@ -78,3 +78,4 @@ info: Microsoft.Hosting.Lifetime[0]
 
 #### Try it out
 > GET: `https://localhost:5001/health`
+> GET: `http://localhost:5000/health`
