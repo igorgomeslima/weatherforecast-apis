@@ -18,4 +18,12 @@ RUN dotnet publish "WeatherForecast.Api.Https.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+# For DEMO purposes only, copying certificates into an image isn't recommended ➤ https://docs.microsoft.com/pt-br/aspnet/core/security/docker-compose-https?view=aspnetcore-5.0#certificates
+ADD /__needs/user-secrets /root/.microsoft/usersecrets
+COPY /__needs/certs/https/WeatherForecast.Api.Https.pfx /root/.aspnet/https/
+
+#COPY WeatherForecast.Api.Https.pfx /root/.aspnet/https/ #from root folder of Dockerfile
+#COPY /__needs/user-secrets/* /root/.microsoft/usersecrets
+
 ENTRYPOINT ["dotnet", "WeatherForecast.Api.Https.dll"]

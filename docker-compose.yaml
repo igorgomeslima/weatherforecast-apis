@@ -15,9 +15,9 @@ services:
         ASPNETCORE_URLS: "https://+;http://+"
         ASPNETCORE_HTTPS_PORT: "5001"
         ASPNETCORE_ENVIRONMENT: Development
-    volumes:
-        - .\user-secrets:/root/.microsoft/usersecrets
-        - .\certs\https:/root/.aspnet/https/
+    #volumes:
+        #- .\user-secrets:/root/.microsoft/usersecrets
+        #- .\certs\https:/root/.aspnet/https/
   
   #############################################################
   # Weather Forecast service running over HTTP protocol
